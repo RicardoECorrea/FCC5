@@ -1,0 +1,47 @@
+.nav {
+    display: flex;
+    background: red;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+    padding: 0.5rem 0rem;
+}
+
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 2rem;
+}
+
+body {
+    background: #444040;
+}
+
+#welcome-section {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#projects {
+    background: darkblue;
+    text-align: center;
+    padding: 10rem 2rem;
+}
+
+.wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: yellow;
+    margin: 0 auto;
+    padding-top: 3em;
+}
+
+.wrapper p {
+    color: white;
+}
