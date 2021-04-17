@@ -1,3 +1,7 @@
+* {
+    font-family: Libre Franklin;
+}
+
 .nav {
     display: flex;
     background: red;
@@ -5,6 +9,8 @@
     width: 100%;
     align-items: center;
     padding: 0.5rem 0rem;
+    position: fixed;
+    top: 0;
 }
 
 
@@ -21,10 +27,11 @@ body {
 }
 
 #welcome-section {
-    height: 250px;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 #projects {
@@ -34,14 +41,51 @@ body {
 }
 
 .wrapper {
-    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: yellow;
-    margin: 0 auto;
-    padding-top: 3em;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 5px;
 }
 
-.wrapper p {
+img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.box {
+    padding: 10px;
+}
+
+.titulo {
     color: white;
+}
+
+h1 {
+    color: white;
+    font-size: 3.5em;
+    margin: auto;
+}
+
+h2 {
+    text-decoration: underline;
+    color: white;
+    font-size: 2.5em;
+}
+
+#contact {
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#contact a {
+    color: white;
+    margin-left:10px;
+    margin-right: 10px;
+}
+
+@media screen and (min width: 200px) and (max-width:600)  {
+    #contact a {
+        color:green;
+    }
+    
 }
